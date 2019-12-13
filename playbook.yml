@@ -1,6 +1,8 @@
----
 
-- hosts: all
-  gather_facts: false
-  tasks:
-    - ping:
+- name: install nginx
+  hosts: all
+  become: yes
+  roles:
+    - nginx
+
+
