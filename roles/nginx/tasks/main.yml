@@ -1,5 +1,6 @@
+## Credits to John Lieske - https://www.ansible.com/blog/getting-started-writing-your-first-playbook
 ---
-  - name: Install nginx
+- name: Install nginx
   hosts: host.name.ip
   become: true
 
@@ -23,4 +24,3 @@
     service:
       name: nginx
       state: started
-
