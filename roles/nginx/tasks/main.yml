@@ -1,8 +1,8 @@
 ## Credits to John Lieske - https://www.ansible.com/blog/getting-started-writing-your-first-playbook
 ---
-  - name: Install nginx
-    hosts: all
-    become: true
+- name: Install nginx
+  hosts: all
+  become: true
 
   tasks:
   - name: Add epel-release repo
