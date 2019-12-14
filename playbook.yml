@@ -1,8 +1,8 @@
-
-- name: install nginx
+---
+- name: This sets up an smap
   hosts: all
-  become: yes
-  roles:
-    - nginx
-
-
+  tasks:
+  - name: Install nmap packages 
+    yum:
+      name: nmap
+      state: present
